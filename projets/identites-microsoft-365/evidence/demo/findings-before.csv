@@ -1,0 +1,7 @@
+"userId","issue","mode","ticket"
+"demo-bob","MFA_NOT_REGISTERED","SYNTHETIC","INC-DEMO-001"
+"demo-bob","NO_ENTITLEMENT: Exchange Online","SYNTHETIC","INC-DEMO-001"
+"demo-bob","NO_ENTITLEMENT: Teams","SYNTHETIC","INC-DEMO-001"
+"demo-bob","NO_ENTITLEMENT: OneDrive","SYNTHETIC","INC-DEMO-001"
+"demo-carol","ACCOUNT_DISABLED","SYNTHETIC","INC-DEMO-001"
+"demo-carol","LEAVER_ACCESS_REMAINS","SYNTHETIC","INC-DEMO-001"

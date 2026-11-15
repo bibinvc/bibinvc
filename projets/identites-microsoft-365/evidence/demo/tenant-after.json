@@ -1,0 +1,96 @@
+{
+  "description": "Synthetic Microsoft 365 / Entra ID learning model, no real tenant",
+  "groups": {
+    "grp-collaboration": {
+      "services": [
+        "Teams",
+        "SharePoint Online",
+        "OneDrive"
+      ]
+    },
+    "grp-mail": {
+      "services": [
+        "Exchange Online"
+      ]
+    },
+    "grp-hr-private": {
+      "services": [
+        "SharePoint Online"
+      ]
+    }
+  },
+  "users": {
+    "demo-alice": {
+      "displayName": "Alice Example",
+      "department": "Support",
+      "enabled": true,
+      "mfaRegistered": true,
+      "sessionsActive": true,
+      "groups": [
+        "grp-collaboration",
+        "grp-mail"
+      ]
+    },
+    "demo-bob": {
+      "displayName": "Bob Example",
+      "department": "Support",
+      "enabled": true,
+      "mfaRegistered": false,
+      "sessionsActive": true,
+      "groups": [
+        "grp-collaboration",
+        "grp-mail"
+      ]
+    },
+    "demo-carol": {
+      "displayName": "Carol Example",
+      "department": "Finance",
+      "enabled": false,
+      "mfaRegistered": true,
+      "sessionsActive": false,
+      "groups": []
+    },
+    "demo-dan": {
+      "sessionsActive": false,
+      "groups": [
+        "grp-collaboration",
+        "grp-mail"
+      ],
+      "department": "Support",
+      "mfaRegistered": false,
+      "displayName": "Dan Example",
+      "enabled": true
+    }
+  },
+  "processedTickets": [
+    "REQ-DEMO-001",
+    "CHG-DEMO-002",
+    "CHG-DEMO-003"
+  ],
+  "audit": [
+    {
+      "ticketId": "REQ-DEMO-001",
+      "approval": "approved",
+      "timestampUtc": "2026-11-15T21:57:36.3912154Z",
+      "executor": "OFFLINE_LAB",
+      "action": "joiner",
+      "userId": "demo-dan"
+    },
+    {
+      "ticketId": "CHG-DEMO-002",
+      "approval": "approved",
+      "timestampUtc": "2026-11-15T21:57:36.396251Z",
+      "executor": "OFFLINE_LAB",
+      "action": "mover",
+      "userId": "demo-bob"
+    },
+    {
+      "ticketId": "CHG-DEMO-003",
+      "approval": "approved",
+      "timestampUtc": "2026-11-15T21:57:36.3977829Z",
+      "executor": "OFFLINE_LAB",
+      "action": "leaver",
+      "userId": "demo-carol"
+    }
+  ]
+}

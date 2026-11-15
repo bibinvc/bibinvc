@@ -1,0 +1,4 @@
+"action","approval","ticketId","userId","timestampUtc","executor"
+"joiner","approved","REQ-DEMO-001","demo-dan","2026-11-15T21:57:36.3912154Z","OFFLINE_LAB"
+"mover","approved","CHG-DEMO-002","demo-bob","2026-11-15T21:57:36.3962510Z","OFFLINE_LAB"
+"leaver","approved","CHG-DEMO-003","demo-carol","2026-11-15T21:57:36.3977829Z","OFFLINE_LAB"

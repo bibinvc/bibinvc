@@ -1,0 +1,78 @@
+[
+  {
+    "name": "Healthy user has zero issues",
+    "status": "PASS"
+  },
+  {
+    "name": "MFA missing is detected",
+    "status": "PASS"
+  },
+  {
+    "name": "Missing mailbox entitlement is detected",
+    "status": "PASS"
+  },
+  {
+    "name": "Residual leaver access is detected",
+    "status": "PASS"
+  },
+  {
+    "name": "Unknown user diagnosis fails",
+    "status": "PASS"
+  },
+  {
+    "name": "Joiner creates user and desired memberships",
+    "status": "PASS"
+  },
+  {
+    "name": "New account still requires real MFA enrolment",
+    "status": "PASS"
+  },
+  {
+    "name": "Change leaves original input untouched",
+    "status": "PASS"
+  },
+  {
+    "name": "Mover removes old group and grants desired groups",
+    "status": "PASS"
+  },
+  {
+    "name": "Leaver disables account removes groups and revokes simulated sessions",
+    "status": "PASS"
+  },
+  {
+    "name": "Retry is idempotent and adds no duplicate audit entry",
+    "status": "PASS"
+  },
+  {
+    "name": "Unapproved request rejected without mutation",
+    "status": "PASS"
+  },
+  {
+    "name": "Unknown group rejected before committing changes",
+    "status": "PASS"
+  },
+  {
+    "name": "Unknown lifecycle request rejected",
+    "status": "PASS"
+  },
+  {
+    "name": "Duplicate joiner on a new ticket rejected",
+    "status": "PASS"
+  },
+  {
+    "name": "Request planner explicitly reports offline mode and zero cloud calls",
+    "status": "PASS"
+  },
+  {
+    "name": "Mover membership removal uses safe $ref suffix",
+    "status": "PASS"
+  },
+  {
+    "name": "Membership addition uses @odata.id object reference",
+    "status": "PASS"
+  },
+  {
+    "name": "Leaver plan removes residual membership via reference",
+    "status": "PASS"
+  }
+]

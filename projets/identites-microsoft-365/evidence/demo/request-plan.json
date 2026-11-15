@@ -1,0 +1,83 @@
+[
+  {
+    "cloudCallsMade": 0,
+    "ticketId": "REQ-DEMO-001",
+    "requests": [
+      {
+        "note": "Illustration only: real creation requires additional fields and permissions",
+        "method": "POST",
+        "path": "/users"
+      },
+      {
+        "method": "POST",
+        "body": {
+          "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/demo-dan"
+        },
+        "path": "/groups/grp-collaboration/members/$ref"
+      },
+      {
+        "method": "POST",
+        "body": {
+          "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/demo-dan"
+        },
+        "path": "/groups/grp-mail/members/$ref"
+      }
+    ],
+    "mode": "OFFLINE_PLAN_ONLY"
+  },
+  {
+    "cloudCallsMade": 0,
+    "ticketId": "CHG-DEMO-002",
+    "requests": [
+      {
+        "note": "Review old and new memberships before a live change",
+        "method": "PATCH",
+        "path": "/users/demo-bob"
+      },
+      {
+        "note": "The $ref suffix removes membership, not the directory object",
+        "method": "DELETE",
+        "path": "/groups/grp-hr-private/members/demo-bob/$ref"
+      },
+      {
+        "method": "POST",
+        "body": {
+          "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/demo-bob"
+        },
+        "path": "/groups/grp-collaboration/members/$ref"
+      },
+      {
+        "method": "POST",
+        "body": {
+          "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/demo-bob"
+        },
+        "path": "/groups/grp-mail/members/$ref"
+      }
+    ],
+    "mode": "OFFLINE_PLAN_ONLY"
+  },
+  {
+    "cloudCallsMade": 0,
+    "ticketId": "CHG-DEMO-003",
+    "requests": [
+      {
+        "method": "PATCH",
+        "body": {
+          "accountEnabled": false
+        },
+        "path": "/users/demo-carol"
+      },
+      {
+        "note": "Session revocation is eventually effective in a real tenant",
+        "method": "POST",
+        "path": "/users/demo-carol/revokeSignInSessions"
+      },
+      {
+        "note": "The $ref suffix removes membership, not the directory object",
+        "method": "DELETE",
+        "path": "/groups/grp-mail/members/demo-carol/$ref"
+      }
+    ],
+    "mode": "OFFLINE_PLAN_ONLY"
+  }
+]

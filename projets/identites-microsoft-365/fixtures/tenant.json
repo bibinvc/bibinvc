@@ -1,0 +1,15 @@
+{
+  "description": "Synthetic Microsoft 365 / Entra ID learning model, no real tenant",
+  "groups": {
+    "grp-collaboration": {"services": ["Teams", "SharePoint Online", "OneDrive"]},
+    "grp-mail": {"services": ["Exchange Online"]},
+    "grp-hr-private": {"services": ["SharePoint Online"]}
+  },
+  "users": {
+    "demo-alice": {"displayName": "Alice Example", "department": "Support", "enabled": true, "mfaRegistered": true, "sessionsActive": true, "groups": ["grp-collaboration", "grp-mail"]},
+    "demo-bob": {"displayName": "Bob Example", "department": "HR", "enabled": true, "mfaRegistered": false, "sessionsActive": true, "groups": ["grp-hr-private"]},
+    "demo-carol": {"displayName": "Carol Example", "department": "Finance", "enabled": false, "mfaRegistered": true, "sessionsActive": true, "groups": ["grp-mail"]}
+  },
+  "processedTickets": [],
+  "audit": []
+}

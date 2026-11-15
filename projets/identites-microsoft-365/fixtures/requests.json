@@ -1,0 +1,5 @@
+[
+  {"ticketId":"REQ-DEMO-001","type":"joiner","userId":"demo-dan","displayName":"Dan Example","department":"Support","groups":["grp-collaboration","grp-mail"],"approval":"approved"},
+  {"ticketId":"CHG-DEMO-002","type":"mover","userId":"demo-bob","department":"Support","groups":["grp-collaboration","grp-mail"],"approval":"approved"},
+  {"ticketId":"CHG-DEMO-003","type":"leaver","userId":"demo-carol","approval":"approved"}
+]
